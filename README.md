@@ -1,1 +1,1 @@
-# friends-approximator
+# Cardinal Direction Accuracy Tester
