@@ -3,7 +3,7 @@ import math, random
 from functions import calcDistance, calcAngle, cardinalPoint
 from graphics import plotFriendsMap
 
-myCoords = (0,0)
+myCoords = (79,-71)
 horizLine = (myCoords[0]+1, myCoords[1]) # used to calc the angle
 
 # Each index has the same i-th friend data, then I fill the data
@@ -14,7 +14,7 @@ ithFriendApproxCoords = []
 
 # Generate 7 random values of X and Y
 for i in range (7):
-    x, y = random.uniform(-10.00, 10.00), random.uniform(-10.00, 10.00)
+    x, y = random.uniform(-90.00, 90.000), random.uniform(-90.00, 90.00)
     ithFriendCoords.append((x,y))
 
 for ithFriend in ithFriendCoords:
@@ -28,7 +28,7 @@ for ithFriend in ithFriendCoords:
 
     # Fill approximate coords array
     directionTo = cardinalPoint(angleFromTo)
-    ithFriendApproxCoords.append((((math.cos(directionTo[1])) * distFromTo), ((math.sin(directionTo[1])) * distFromTo)))
+    ithFriendApproxCoords.append((((math.cos(directionTo[1])) * distFromTo) + myCoords[0], ((math.sin(directionTo[1])) * distFromTo) + myCoords[1]))
 
 plotFriendsMap(myCoords, ithFriendCoords, ithFriendApproxCoords)
 

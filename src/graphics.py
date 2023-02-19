@@ -18,13 +18,13 @@ def plotFriendsMap(myCoords, ithFriendCoords, ithFriendApproxCoords):
     for i in range(len(ithFriendCoords)):
         plt.arrow(actual_X[i], actual_Y[i], approx_X[i]-actual_X[i], approx_Y[i]-actual_Y[i], head_width=0.3, head_length=0.1, fc='orange', ec='orange', linestyle = "--")
         difference = round(calcDistance(ithFriendCoords[i], ithFriendApproxCoords[i]), 1)
-        plt.text(approx_X[i]+0.5, approx_Y[i]+0.5, str(difference) + "m", ha = "right", va = "center")
+        plt.text(approx_X[i]+4, approx_Y[i]+4, str(difference), ha = "right", va = "center")
 
     # add x and y axis lines, and set axis limits and names
     plt.axhline(0, color='black', linewidth=1)
     plt.axvline(0, color='black', linewidth=1)
-    plt.xlim(-10, 10)
-    plt.ylim(-10, 10)
+    plt.xlim(-100, 100)
+    plt.ylim(-100, 100)
     plt.xlabel("X axis")
     plt.ylabel("Y axis")
 
