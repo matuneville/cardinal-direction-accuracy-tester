@@ -19,7 +19,7 @@ In the visual representations of the project, my position is shown as a light bl
 
 It can be observed that when we are located at the center of the plane, approximations of friends' positions are generally accurate. However, when we are closer to the sides or corners of the plane, the accuracy of approximations decreases.
 
-- **Plots with my coords positioned randomly**  
+- **Plots with my coords randomly positioned**  
 
 ![plot1](plots/pic2.jpg)  
 
