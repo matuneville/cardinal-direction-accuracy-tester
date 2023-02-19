@@ -1,8 +1,8 @@
-# Cardinal Direction Accuracy Tester
+# Cardinal Direction Accuracy Tester 📐🧭
 
 The Direction and Distance Accuracy Tester is a Python project that allows you to see how accurate an approximation of a friend's location can be when you only know their distance and cardinal direction from your own location. Developed in VSCode.
 
-# Explanation and Objective  
+# Explanation and Objective 🎯
 
 The project takes as input the coordinates of your location and your friends' on a 2D grid. Then performs trigonometric calculations and basic linear algebra to estimate the position of your friend on the grid based on the given data. A plot is then generated to show how accurate the estimate is, by displaying the actual position of your friend, your estimated position of your friend, and the distance between the two.   
 
@@ -10,7 +10,7 @@ This project can be helpful in demonstrating the limitations of using cardinal d
 
 To understand how the program works, it's important to know that it uses the following cardinal directions: N, NW, W, SW, S, SE, E, and NE. Once the cardinal direction of a friend is determined, the algorithm approximates their position as if you were to travel directly along the cardinal line that passes closest to their coordinates. The algorithm uses the radius given by the distance calculation to determine the endpoint of this line. Therefore, the closer a friend is to a cardinal direction line, the more accurate the prediction will be.
 
-# Simulations: Accurate or Inaccurate?
+# Simulations: Accurate or Inaccurate? 🔍
 In the visual representations of the project, my position is shown as a light blue point, while your friends' actual positions are shown as dark blue points. The approximations of their positions are shown as green points, with the distance of the approximation displayed as a number next to them.
 
 - **Plots with my coords positioned at (0,0)**  
